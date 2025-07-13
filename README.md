@@ -39,11 +39,11 @@ python app.py
 5. Visit http://127.0.0.1:5000 in your browser to view logs
 
 ## Demo Links
-Trigger Repo: action-repo
+Action(trigger) Repo: [action-repo](https://github.com/ishitagupta26/action-repo)
 
-Webhook Repo: webhook-repo
+Webhook Repo: [webhook-repo](https://github.com/ishitagupta26/webhook-repo)
 
-Demo Video: Watch here (Replace with your actual video link)
+Demo Video: [Watch here](https://drive.google.com/file/d/1pCkZo2WvHzBMWraYbpM1MXnrO4WscLZk/view?usp=sharing)
 
 ## Features
 --Receives GitHub webhook events
