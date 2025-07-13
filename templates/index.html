@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Webhook Events</title>
+<script>
+  async function fetchEvents() {
+    const res = await fetch("/events");
+    const data = await res.json();
+    const list = document.getElementById("event-list");
+    list.innerHTML = "";
+    data.forEach(event => {
+      const li = document.createElement("li");
+      li.textContent = event.message;
+      list.appendChild(li);
+    });
+  }
+
+  setInterval(fetchEvents, 15000);
+  window.onload = fetchEvents;
+</script>
+
+</head>
+<body>
+  <h1>Webhook Event Logs</h1>
+  <ul id="event-list"></ul>
+</body>
+</html>
